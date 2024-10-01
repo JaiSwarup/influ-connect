@@ -1,5 +1,5 @@
 import { BsSearch } from "react-icons/bs"
-import { BiFilter } from "react-icons/bi"
+import { MdTune } from "react-icons/md"
 type Props = {}
 
 export default function Search({}: Props) {
@@ -14,7 +14,7 @@ export default function Search({}: Props) {
         <input type="search" name="influencer" id="influencer" className="bg-gray-300 w-full rounded-md p-2 focus:outline-0 focus:border focus:border-black focus:shadow-none"  placeholder="Search Influencers by name or keyword..." />
       </div>
       <div className="flex gap-2 justify-between w-1/4">
-        <button type="button" onClick={handleClick} className="flex gap-1 items-center bg-white text-black border px-3  rounded-md"><BiFilter />Filter</button>
+        <button type="button" onClick={handleClick} className="flex gap-1 items-center bg-white text-black border px-3  rounded-md"><MdTune />Filter</button>
         <button type="submit" className="bg-black text-white px-3  rounded-md">Search</button>
       </div>
       </div>

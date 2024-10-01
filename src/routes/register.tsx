@@ -62,17 +62,17 @@ const Step1 = () => {
 }
 
 function Register({}: Props) {
-  const [step, setStep] = useState<number>(1);
+  const [step] = useState<number>(1);
   return (
     <>
       <SelectRole />
       <div className="mt-10 w-full flex justify-center">
-        <form action="" className="w-1/2 flex flex-col justify-center bg-white shadow-sm rounded-xl p-4">
+        <form action="" className="w-2/5 flex flex-col justify-center bg-white shadow-lg rounded-xl px-6 py-4">
           {step === 1 && <Step1 />}
           <p className="text-center">Or Continue With</p>
           <div className="flex w-full justify-evenly gap-4">
-            <button className="bg-blue-500 text-white py-2 w-60 flex justify-center rounded-lg"><BsInstagram size={30} /></button>
-            <button className="bg-blue-500 text-white py-2 w-60 flex justify-center rounded-lg"><BsFacebook size={30} /></button>
+            <button className="bg-blue-500 text-white py-2 w-40 flex justify-center rounded-lg"><BsInstagram size={30} /></button>
+            <button className="bg-blue-500 text-white py-2 w-40 flex justify-center rounded-lg"><BsFacebook size={30} /></button>
           </div>
         </form>
       </div>

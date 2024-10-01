@@ -6,11 +6,11 @@ function Navbar() {
     console.log('Menu clicked');
   }
   return (
-    <nav className='flex justify-between items-center gap-4 px-12 text-lg font-medium bg-white sticky top-0 z-10 text-black shadow-md h-20'>
-      <Link to="/" className="text-3xl font-semibold p-3">
+    <nav className='flex justify-between items-center gap-4 px-6 text-lg font-medium bg-white sticky top-0 z-10 text-black shadow-md h-20'>
+      <Link to="/" className="text-2xl font-bold p-3">
         InfluConnect
       </Link>
-      <span className='gap-4 hidden lg:flex'>
+      <span className='gap-3 hidden lg:flex'>
         <Link className="px-4 py-1.5 rounded-xl outline-4 hover:outline hover:outline-blue-200 border border-white hover:bg-blue-200 hover:border-blue-500 hover:text-blue-500 transition-colors" to='#'>For Business</Link>
         <Link className="px-4 py-1.5 rounded-xl outline-4 hover:outline hover:outline-blue-200 border border-white hover:bg-blue-200 hover:border-blue-500 hover:text-blue-500 transition-colors" to='#'>For Influencers</Link>
         <Link className="px-4 py-1.5 rounded-xl outline-4 hover:outline hover:outline-blue-200 border border-white hover:bg-blue-200 hover:border-blue-500 hover:text-blue-500 transition-colors" to='#'>Discover</Link>
