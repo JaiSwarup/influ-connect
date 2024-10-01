@@ -21,7 +21,7 @@ const SelectRole = () => {
         <div className="flex w-full gap-12 mt-8">
 
         <Role 
-            img="src\assets\influencer.jpg"
+            img="/influencer.jpg"
             title="Influencer"
             description="Boost your career and connect with top brands"
             buttonText="Register as an Influencer"
@@ -29,7 +29,7 @@ const SelectRole = () => {
             onClick={handleRoleSelect}
             />
         <Role 
-            img="src\assets\business.jpg"
+            img="/business.jpg"
             title="Business"
             description="Find the perfect influencers for your campaigns"
             buttonText="Register as a Business"

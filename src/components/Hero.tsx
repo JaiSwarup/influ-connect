@@ -18,7 +18,7 @@ export default function Hero() {
         </span>
       </div>
       <div className="flex-grow overflow-hidden hidden lg:block">
-          <img src="src/assets/instagram-mobile.png" alt="Instagram mobile view" className="object-fit mx-auto" />
+          <img src="/instagram-mobile.png" alt="Instagram mobile view" className="object-fit mx-auto" />
       </div>
     </div>
   )
