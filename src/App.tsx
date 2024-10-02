@@ -1,20 +1,33 @@
-import { RouterProvider, Route, createRoutesFromElements, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import RootLayout from "./layout/RootLayout";
 import Root from "./routes/root";
 import Register from "./routes/register";
 import Search from "./routes/search";
 
-const routes = createRoutesFromElements([
-  <Route>
-    <Route path="/" element={<RootLayout/>}>
-      <Route index element={<Root/>}></Route>
-      <Route path="register" element={<Register/>} />
-      <Route path="search" element={<Search/>} />
-    </Route>
-  </Route>
-]);
 
-const router = createBrowserRouter(routes);
+const router = createBrowserRouter([
+  {
+    element: <RootLayout />,
+    children: [
+      {
+        path : "/",
+        element: <Root />
+      },
+      {
+        path : "/register",
+        element: <Register />
+      },
+      {
+        path : "/search",
+        element: <Search />
+      },
+      {
+        path : "/login",
+        element: <div>Login</div>
+      }
+    ]
+  }
+]);
 
 
 function App() {
