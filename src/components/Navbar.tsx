@@ -18,6 +18,8 @@ function Navbar() {
       <span className='gap-4 hidden lg:flex'>
         <Link className="px-4 py-1.5 rounded-xl outline-4 hover:outline hover:outline-blue-200 border border-black hover:bg-blue-200 hover:border-blue-500 hover:text-blue-500 transition-colors" to='login'>Sign In</Link>
         <Link className="px-4 py-1.5 rounded-xl outline-4 hover:outline hover:outline-blue-500 border border-white hover:bg-blue-500 transition-colors text-white bg-black" to='register'>Sign Up</Link>
+        {/* <SignInButton />
+        <SignUpButton /> */}
       </span>
       <button onClick={handleClick} className='lg:hidden text-3xl'><BiMenu /></button>
     </nav>

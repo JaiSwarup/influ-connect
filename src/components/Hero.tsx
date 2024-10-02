@@ -14,7 +14,7 @@ export default function Hero() {
         </p>
         <span className="flex mt-6 items-center gap-4">
           <button className="bg-blue-500 text-white px-8 py-2 rounded-lg hover:bg-blue-600 transition-colors">Get Started</button>
-          <Link to="#" className="text-blue-500 font-medium text-center px-4 py-2 border border-blue-500 rounded-lg" >How it works?</Link>
+          <Link to="/search" className="text-blue-500 font-medium text-center px-4 py-2 border border-blue-500 rounded-lg" >Search for Influencers</Link>
         </span>
       </div>
       <div className="flex-grow overflow-hidden hidden lg:block">

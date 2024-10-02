@@ -1,14 +1,16 @@
-import Navbar from "../components/Navbar"
-import { Outlet } from "react-router-dom"
-type Props = {}
+import { Outlet, useNavigate } from 'react-router-dom'
+import Navbar from '../components/Navbar'
 
-function RootLayout({}: Props) {
+
+export default function RootLayout() {
+  const navigate = useNavigate()
+
   return (
     <>
       <Navbar />
-      <Outlet />
+      <main>
+        <Outlet />
+      </main>
     </>
   )
 }
-
-export default RootLayout
